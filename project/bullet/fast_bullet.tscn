@@ -43,5 +43,3 @@ shape = SubResource("CircleShape2D_3udht")
 debug_color = Color(0.8409385, 0.3572527, 0.37389633, 0.41960785)
 
 [node name="VisibleOnScreenNotifier" type="VisibleOnScreenNotifier2D" parent="." unique_id=1172766195]
-
-[connection signal="screen_exited" from="VisibleOnScreenNotifier" to="." method="_on_visible_on_screen_notifier_screen_exited"]
