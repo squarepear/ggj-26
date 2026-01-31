@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://ihep336x6bpj" path="res://bullet/bullet.gd" id="1_6wip1"]
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="1_k2aps"]
 [ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="3_0qjqd"]
-[ext_resource type="Texture2D" uid="uid://c25jdqg3rjnyy" path="res://icon.svg" id="4_xvnxm"]
+[ext_resource type="Texture2D" uid="uid://ckhc57s5njdfm" path="res://bullet/bullet.png" id="4_xvnxm"]
 
 [node name="Bullet" type="CharacterBody2D" unique_id=496901937]
 script = ExtResource("1_6wip1")
