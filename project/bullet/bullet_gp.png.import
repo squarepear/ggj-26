@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbp7c2l6djx6t"
-path="res://.godot/imported/leg.png-085e264d875ecb1e94f9fd125014af8d.ctex"
+uid="uid://u425shvi7j5m"
+path="res://.godot/imported/bullet_gp.png-afb9d9cea80cf4d5f69ca727df636c50.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/leg.png"
-dest_files=["res://.godot/imported/leg.png-085e264d875ecb1e94f9fd125014af8d.ctex"]
+source_file="res://bullet/bullet_gp.png"
+dest_files=["res://.godot/imported/bullet_gp.png-afb9d9cea80cf4d5f69ca727df636c50.ctex"]
 
 [params]
 
