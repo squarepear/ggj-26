@@ -2,9 +2,10 @@ class_name MovementCompenent
 extends Node
 
 @export var _body: CharacterBody2D
+@export var speed := 256.0
 
 var _dir := Vector2.ZERO
-var _speed := 256.0
+
 
 
 func set_dir(new_dir: Vector2) -> void:
@@ -12,5 +13,9 @@ func set_dir(new_dir: Vector2) -> void:
 
 
 func update() -> void:
-	_body.velocity = _dir * _speed
+	_body.velocity = _dir * speed
 	_body.move_and_slide()
+
+
+func set_speed(new_speed: float) -> void:
+	speed = new_speed
