@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://ch0jm2lovcsp7" path="res://player/player_head.png" id="2_yw30f"]
 [ext_resource type="Script" uid="uid://dhru0yrcpyree" path="res://component/input_component.gd" id="4_qjkh3"]
 [ext_resource type="Script" uid="uid://dlv8l1edgdbu2" path="res://component/hitbox_component.gd" id="5_qjkh3"]
+[ext_resource type="Script" uid="uid://cn46gwwr8bncx" path="res://component/health_component.gd" id="7_boad6"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kqu6x"]
 radius = 64.0
@@ -53,3 +54,9 @@ metadata/_custom_type_script = "uid://dlv8l1edgdbu2"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" unique_id=927616664]
 shape = SubResource("CircleShape2D_qjkh3")
+
+[node name="HealthComponent" type="Node" parent="." unique_id=1141658839]
+script = ExtResource("7_boad6")
+metadata/_custom_type_script = "uid://cn46gwwr8bncx"
+
+[connection signal="hit" from="HitboxComponent" to="." method="_on_hitbox_component_hit"]
