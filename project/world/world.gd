@@ -5,6 +5,7 @@ const GAME_OVER = preload("res://menus/game_over_menu.tscn")
 @onready var _wave_component: WaveComponent = %WaveComponent
 @onready var _wave_generator: WaveGenerator = %WaveGenerator
 @onready var _death_sound: AudioStreamPlayer = %DeathSound
+@onready var _music: AudioStreamPlayer = $Music
 
 
 var _game_over := false
@@ -17,6 +18,7 @@ func _ready() -> void:
 
 func next_wave() -> void:
 	if player_living:
+		_music.pitch_scale += 0.01
 		_wave_generator.generate()
 		_display_wave_label()
 
