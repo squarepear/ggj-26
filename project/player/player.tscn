@@ -102,16 +102,14 @@ metadata/_custom_type_script = "uid://dlv8l1edgdbu2"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" unique_id=927616664]
 shape = SubResource("CircleShape2D_qjkh3")
 
-<<<<<<< Updated upstream
 [node name="HealthComponent" type="Node" parent="." unique_id=1141658839]
 script = ExtResource("7_boad6")
 metadata/_custom_type_script = "uid://cn46gwwr8bncx"
 
 [connection signal="hit" from="HitboxComponent" to="." method="_on_hitbox_component_hit"]
-=======
+
 [node name="BlinkTimer" type="Timer" parent="." unique_id=278008534]
 wait_time = 5.0
 autostart = true
 
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]
->>>>>>> Stashed changes
