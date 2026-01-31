@@ -44,7 +44,7 @@ func _get_random_spawn_point(offset := BOUNDARY_OFFSET) -> Vector2:
 
 func _create_settings(position: Vector2) -> SpawnerSettings:
 	var settings := SpawnerSettings.new()
-	settings.bullet_scene = _bullet_scenes[3]
+	settings.bullet_scene = _bullet_scenes[randi_range(0,3)]
 	settings.position = position
 	settings.direction = (_get_random_spawn_point(-BOUNDARY_OFFSET) - position).normalized()
 	settings.delay = randf_range(1, 5)
