@@ -4,9 +4,13 @@
 [ext_resource type="Script" uid="uid://b3cw2fpnyxy3d" path="res://player/player.gd" id="1_yw30f"]
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="2_rkbax"]
 [ext_resource type="Script" uid="uid://dhru0yrcpyree" path="res://component/input_component.gd" id="4_qjkh3"]
+[ext_resource type="Script" uid="uid://dlv8l1edgdbu2" path="res://component/hitbox_component.gd" id="5_qjkh3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kqu6x"]
 radius = 64.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qjkh3"]
+radius = 96.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1847389676]
 motion_mode = 1
@@ -26,3 +30,10 @@ metadata/_custom_type_script = "uid://dfu1hk8ne0eau"
 [node name="InputComponent" type="Node" parent="." unique_id=335590015]
 script = ExtResource("4_qjkh3")
 metadata/_custom_type_script = "uid://dhru0yrcpyree"
+
+[node name="HitboxComponent" type="Area2D" parent="." unique_id=2096247725]
+script = ExtResource("5_qjkh3")
+metadata/_custom_type_script = "uid://dlv8l1edgdbu2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" unique_id=927616664]
+shape = SubResource("CircleShape2D_qjkh3")
