@@ -5,14 +5,21 @@
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="3_vealc"]
 [ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="4_wm0qd"]
 [ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_85rdh"]
-[ext_resource type="Script" uid="uid://baug51yyody53" path="res://component/spawner_component.gd" id="6_wm0qd"]
+[ext_resource type="Script" uid="uid://baug51yyody53" path="res://component/spawner/spawner_component.gd" id="6_wm0qd"]
 [ext_resource type="PackedScene" uid="uid://c54hqm4wfxq0w" path="res://bullet/bullet.tscn" id="7_85rdh"]
+[ext_resource type="Script" uid="uid://lbhiseaheje4" path="res://component/spawner/spawner_settings.gd" id="7_vealc"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ynyjt"]
 radius = 6.0
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3udht"]
 radius = 16.0
+
+[sub_resource type="Resource" id="Resource_wm0qd"]
+script = ExtResource("7_vealc")
+delay = 1.0
+bullet_scene = ExtResource("7_85rdh")
+metadata/_custom_type_script = "uid://lbhiseaheje4"
 
 [node name="SplitterBullet" type="CharacterBody2D" unique_id=496901937]
 collision_layer = 4
@@ -48,7 +55,7 @@ debug_color = Color(0.8409385, 0.3572527, 0.37389633, 0.41960785)
 
 [node name="SpawnerComponent" type="Node2D" parent="." unique_id=401337838]
 script = ExtResource("6_wm0qd")
-bullet = ExtResource("7_85rdh")
+_settings = SubResource("Resource_wm0qd")
 metadata/_custom_type_script = "uid://baug51yyody53"
 
 [node name="Timer" type="Timer" parent="." unique_id=1602839334]

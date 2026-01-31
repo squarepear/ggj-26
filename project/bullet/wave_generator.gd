@@ -16,14 +16,14 @@ func _ready() -> void:
 func generate() -> void:
 	_current_wave += 1
 	for i in 5:
-		_wave_component.add_spawner(_get_random_spawn_point(), _bullet_scenes[0])
+		_wave_component.add_spawner(_create_settings(_get_random_spawn_point()))
 
 
 # Gets a random point along the boundary of the screen with an offset of BOUNDARY_OFFSET
-func _get_random_spawn_point() -> Vector2:
+func _get_random_spawn_point(offset := BOUNDARY_OFFSET) -> Vector2:
 	var boundary := get_viewport().get_visible_rect()
-	boundary.position -= Vector2.ONE * BOUNDARY_OFFSET
-	boundary.size += Vector2.ONE * BOUNDARY_OFFSET * 2
+	boundary.position -= Vector2.ONE * offset
+	boundary.size += Vector2.ONE * offset * 2
 
 	var pos := randf_range(0, boundary.size.x * 2 + boundary.size.y * 2)
 
@@ -40,6 +40,17 @@ func _get_random_spawn_point() -> Vector2:
 	pos -= boundary.size.y
 
 	return boundary.position + Vector2.DOWN * pos + Vector2.RIGHT * boundary.size.x
+
+
+func _create_settings(position: Vector2) -> SpawnerSettings:
+	var settings := SpawnerSettings.new()
+	settings.bullet_scene = _bullet_scenes[3]
+	settings.position = position
+	settings.direction = (_get_random_spawn_point(-BOUNDARY_OFFSET) - position).normalized()
+	settings.delay = randf_range(1, 5)
+	settings.is_ghost = false # TODO: Determine this
+
+	return settings
 
 
 func get_current_wave() -> int:

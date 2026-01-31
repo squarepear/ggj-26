@@ -6,6 +6,11 @@ var screen_exited := false
 var job_done := false
 
 
+func aim(direction: Vector2) -> void:
+	super(direction)
+	_spawner_component._settings.direction = -_movement_compenent._dir
+
+
 func _physics_process(_delta: float) -> void:
 	super(_delta)
 	if screen_exited and job_done:
@@ -14,7 +19,11 @@ func _physics_process(_delta: float) -> void:
 
 
 func _on_timer_timeout() -> void:
-	_spawner_component.spawn(_target_component.get_target())
+	if not _visible_on_screen_notifier.is_on_screen():
+		job_done = true
+		return
+
+	_spawner_component.spawn()
 	
 
 func _on_visible_on_screen_notifier_screen_exited() -> void:

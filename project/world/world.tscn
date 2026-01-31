@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://c54hqm4wfxq0w" path="res://bullet/bullet.tscn" id="5_mmdvd"]
 [ext_resource type="Script" uid="uid://clntnlnf2eit2" path="res://bullet/wave_generator.gd" id="7_sc4t8"]
 [ext_resource type="PackedScene" uid="uid://r6l2lwvbok18" path="res://bullet/fast_bullet.tscn" id="8_ai45w"]
-[ext_resource type="PackedScene" uid="uid://b778kqpgbopad" path="res://bullet/big_bullet.tscn" id="9_4papg"]
+[ext_resource type="PackedScene" uid="uid://d2wex0bjfvjgt" path="res://bullet/big_bullet.tscn" id="9_4papg"]
 [ext_resource type="PackedScene" uid="uid://chak4ltt123op" path="res://bullet/splitter_bullet.tscn" id="10_fyhu2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcf2h"]
@@ -85,10 +85,9 @@ tile_set = SubResource("TileSet_4717r")
 [node name="Player" parent="." unique_id=1847389676 instance=ExtResource("1_6xmxd")]
 position = Vector2(828, 581)
 
-[node name="WaveComponent" type="Node" parent="." unique_id=746619383 node_paths=PackedStringArray("target")]
+[node name="WaveComponent" type="Node" parent="." unique_id=746619383]
 unique_name_in_owner = true
 script = ExtResource("3_h5o24")
-target = NodePath("../Player")
 
 [node name="WaveGenerator" type="Node" parent="." unique_id=2090635365 node_paths=PackedStringArray("_wave_component")]
 unique_name_in_owner = true
