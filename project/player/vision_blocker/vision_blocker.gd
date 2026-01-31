@@ -43,6 +43,7 @@ func splat() -> void:
 	var splot := _hidden.get_child(index)
 	_hidden.remove_child(splot)
 	_visible.add_child(splot)
+	splot.splat()
 
 
 func _spread() -> void:
@@ -64,7 +65,7 @@ func _spread() -> void:
 
 	for x in count.x:
 		for y in count.y:
-			var splot: Sprite2D = SPLOT_SCENE.instantiate()
+			var splot: Splot = SPLOT_SCENE.instantiate()
 			add_child(splot)
 			splot.name = "Splot (%d, %d)" % [x, y]
 			splot.owner = self
