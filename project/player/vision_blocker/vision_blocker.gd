@@ -33,22 +33,25 @@ func _ready() -> void:
 	show()
 
 	for child in splots:
-		remove_child(child)
-		_hidden.add_child(child)
+		if child is not AudioStreamPlayer:
+			remove_child(child)
+			_hidden.add_child(child)
 
 
 func splat() -> void:
 	if _hidden.get_child_count() == 0:
 		fully_splotted.emit()
 		return
-
+	_sound_effect.play()
+	
+	
 	var index := randi() % _hidden.get_child_count()
-
+	
 	var splot := _hidden.get_child(index)
 	_hidden.remove_child(splot)
 	_visible.add_child(splot)
 	splot.splat()
-	_sound_effect.play()
+	
 
 func _spread() -> void:
 	if not Engine.is_editor_hint():
