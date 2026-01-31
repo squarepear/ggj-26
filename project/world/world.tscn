@@ -39,6 +39,7 @@ _wave_component = NodePath("../WaveComponent")
 metadata/_custom_type_script = "uid://clntnlnf2eit2"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=499848769]
+layer = 2
 
 [node name="WaveLabel" type="Label" parent="CanvasLayer" unique_id=853986234]
 unique_name_in_owner = true
