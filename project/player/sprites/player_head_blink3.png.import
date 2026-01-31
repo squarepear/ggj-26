@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://clxxa3rfjp2tk"
-path="res://.godot/imported/background.png-1eece7219ff06aaee6c502ef9716d998.ctex"
+uid="uid://duqj8ijhgt2ga"
+path="res://.godot/imported/player_head_blink3.png-28ec56e402c1a765daeccf2fd8cb4733.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://player/background.png"
-dest_files=["res://.godot/imported/background.png-1eece7219ff06aaee6c502ef9716d998.ctex"]
+source_file="res://player/sprites/player_head_blink3.png"
+dest_files=["res://.godot/imported/player_head_blink3.png-28ec56e402c1a765daeccf2fd8cb4733.ctex"]
 
 [params]
 
