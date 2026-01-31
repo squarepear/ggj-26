@@ -5,11 +5,13 @@ signal screen_exited
 
 @onready var _movement_compenent: MovementCompenent = $MovementCompenent
 @onready var _target_component: TargetComponent = $TargetComponent
+@onready var _visible_on_screen_notifier: VisibleOnScreenNotifier2D = $VisibleOnScreenNotifier
 
 
 func initialize():
 	_movement_compenent.set_dir(_target_component.get_target_direction())
 	_movement_compenent.update()
+	_visible_on_screen_notifier.screen_exited.connect(_on_visible_on_screen_notifier_screen_exited)
 
 
 func _physics_process(delta: float) -> void:
