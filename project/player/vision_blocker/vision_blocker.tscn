@@ -5,303 +5,305 @@
 
 [node name="VisionBlocker" type="CanvasLayer" unique_id=92788859]
 script = ExtResource("1_30shy")
+_spacing = 200
+_wiggle = 48.0
 
-[node name="Splot" parent="." unique_id=1167253487 instance=ExtResource("2_30shy")]
-modulate = Color(0.01617357, 0.7696559, 0.63397396, 1)
-position = Vector2(100, 100)
-rotation = 0.258056
+[node name="Splot (0, 0)" parent="." unique_id=1167253487 instance=ExtResource("2_30shy")]
+modulate = Color(0.555412, 0.022626935, 0.6831013, 1)
+position = Vector2(70.10603, 16.152542)
+rotation = 2.5655818
 
-[node name="Splot2" parent="." unique_id=783277307 instance=ExtResource("2_30shy")]
-modulate = Color(0.9725254, 0.38985264, 0.85676223, 1)
-position = Vector2(100, 300)
-rotation = 2.8179502
+[node name="Splot (0, 1)" parent="." unique_id=1826851288 instance=ExtResource("2_30shy")]
+modulate = Color(0.061250843, 0.103948586, 0.5387291, 1)
+position = Vector2(79.64115, 224.1246)
+rotation = 3.2277899
 
-[node name="Splot3" parent="." unique_id=1316265100 instance=ExtResource("2_30shy")]
-modulate = Color(0.20703498, 0.73989844, 0.9775775, 1)
-position = Vector2(100, 500)
-rotation = 5.6404295
+[node name="Splot (0, 2)" parent="." unique_id=670834703 instance=ExtResource("2_30shy")]
+modulate = Color(0.5817992, 0.26165792, 0.51119405, 1)
+position = Vector2(19.44318, 491.97324)
+rotation = 5.967584
 
-[node name="Splot4" parent="." unique_id=911643582 instance=ExtResource("2_30shy")]
-modulate = Color(0.8150263, 0.84409505, 0.52203625, 1)
-position = Vector2(100, 700)
-rotation = 4.3830295
+[node name="Splot (0, 3)" parent="." unique_id=2098873886 instance=ExtResource("2_30shy")]
+modulate = Color(0.40647456, 0.45835933, 0.6371589, 1)
+position = Vector2(25.191116, 650.9795)
+rotation = 0.77229655
 
-[node name="Splot5" parent="." unique_id=1754689702 instance=ExtResource("2_30shy")]
-modulate = Color(0.6654721, 0.40936527, 0.1595287, 1)
-position = Vector2(100, 900)
-rotation = 4.0423822
+[node name="Splot (0, 4)" parent="." unique_id=1474280365 instance=ExtResource("2_30shy")]
+modulate = Color(0.88686436, 0.38388792, 0.3064335, 1)
+position = Vector2(51.865707, 904.9241)
+rotation = 6.0712633
 
-[node name="Splot6" parent="." unique_id=1916427540 instance=ExtResource("2_30shy")]
-modulate = Color(0.53553605, 0.5685999, 0.7610776, 1)
-position = Vector2(100, 1100)
-rotation = 1.9325525
+[node name="Splot (0, 5)" parent="." unique_id=576957722 instance=ExtResource("2_30shy")]
+modulate = Color(0.24503303, 0.74547434, 0.96397233, 1)
+position = Vector2(96.761444, 1049.1199)
+rotation = 5.1116643
 
-[node name="Splot7" parent="." unique_id=131111322 instance=ExtResource("2_30shy")]
-modulate = Color(0.36843997, 0.054428037, 0.38828102, 1)
-position = Vector2(300, 100)
-rotation = 4.489023
+[node name="Splot (1, 0)" parent="." unique_id=621903619 instance=ExtResource("2_30shy")]
+modulate = Color(0.17109703, 0.88429475, 0.7610667, 1)
+position = Vector2(255.90903, 61.41988)
+rotation = 6.026005
 
-[node name="Splot8" parent="." unique_id=343334912 instance=ExtResource("2_30shy")]
-modulate = Color(0.36950156, 0.49266702, 0.3781496, 1)
-position = Vector2(300, 300)
-rotation = 2.2368212
+[node name="Splot (1, 1)" parent="." unique_id=224525540 instance=ExtResource("2_30shy")]
+modulate = Color(0.27063558, 0.87030524, 0.448323, 1)
+position = Vector2(301.20047, 228.51889)
+rotation = 1.5252388
 
-[node name="Splot9" parent="." unique_id=60272887 instance=ExtResource("2_30shy")]
-modulate = Color(0.71873975, 0.45840526, 0.86182725, 1)
-position = Vector2(300, 500)
-rotation = 4.0732307
+[node name="Splot (1, 2)" parent="." unique_id=1127496691 instance=ExtResource("2_30shy")]
+modulate = Color(0.18151897, 0.15970331, 0.16386499, 1)
+position = Vector2(248.30302, 490.62665)
+rotation = 3.3644207
 
-[node name="Splot10" parent="." unique_id=2072503565 instance=ExtResource("2_30shy")]
-modulate = Color(0.96571714, 0.72643346, 0.08151405, 1)
-position = Vector2(300, 700)
-rotation = 2.8070917
+[node name="Splot (1, 3)" parent="." unique_id=1944112101 instance=ExtResource("2_30shy")]
+modulate = Color(0.430097, 0.56706923, 0.32451507, 1)
+position = Vector2(247.59615, 619.1562)
+rotation = 5.637208
 
-[node name="Splot11" parent="." unique_id=111799920 instance=ExtResource("2_30shy")]
-modulate = Color(0.7723446, 0.6673197, 0.35596117, 1)
-position = Vector2(300, 900)
-rotation = 2.5364637
+[node name="Splot (1, 4)" parent="." unique_id=1140745527 instance=ExtResource("2_30shy")]
+modulate = Color(0.14992017, 0.26302516, 0.20027882, 1)
+position = Vector2(237.50475, 903.6106)
+rotation = 4.946376
 
-[node name="Splot12" parent="." unique_id=1436819086 instance=ExtResource("2_30shy")]
-modulate = Color(0.1691297, 0.8086143, 0.70131564, 1)
-position = Vector2(300, 1100)
-rotation = 5.5473676
+[node name="Splot (1, 5)" parent="." unique_id=1673663166 instance=ExtResource("2_30shy")]
+modulate = Color(0.7025295, 0.09832665, 0.051963266, 1)
+position = Vector2(257.0878, 1047.7535)
+rotation = 4.512321
 
-[node name="Splot13" parent="." unique_id=926100817 instance=ExtResource("2_30shy")]
-modulate = Color(0.17043638, 0.6395875, 0.65610206, 1)
-position = Vector2(500, 100)
-rotation = 5.903204
+[node name="Splot (2, 0)" parent="." unique_id=214678464 instance=ExtResource("2_30shy")]
+modulate = Color(0.3114952, 0.089392126, 0.69161314, 1)
+position = Vector2(422.23456, 106.31514)
+rotation = 0.30431005
 
-[node name="Splot14" parent="." unique_id=289169212 instance=ExtResource("2_30shy")]
-modulate = Color(0.697137, 0.46995074, 0.91213065, 1)
-position = Vector2(500, 300)
-rotation = 0.7276596
+[node name="Splot (2, 1)" parent="." unique_id=454049418 instance=ExtResource("2_30shy")]
+modulate = Color(0.35772985, 0.25657377, 0.21304949, 1)
+position = Vector2(440.27618, 276.31152)
+rotation = 0.4689354
 
-[node name="Splot15" parent="." unique_id=586174498 instance=ExtResource("2_30shy")]
-modulate = Color(0.25987348, 0.53452843, 0.13145891, 1)
-position = Vector2(500, 500)
-rotation = 2.9741123
+[node name="Splot (2, 2)" parent="." unique_id=179908838 instance=ExtResource("2_30shy")]
+modulate = Color(0.9228945, 0.31705672, 0.4318393, 1)
+position = Vector2(493.15088, 481.70224)
+rotation = 3.2852404
 
-[node name="Splot16" parent="." unique_id=1224275271 instance=ExtResource("2_30shy")]
-modulate = Color(0.66017896, 0.18794303, 0.6179198, 1)
-position = Vector2(500, 700)
-rotation = 4.7548203
+[node name="Splot (2, 3)" parent="." unique_id=1318747260 instance=ExtResource("2_30shy")]
+modulate = Color(0.078140326, 0.4536568, 0.6747154, 1)
+position = Vector2(458.1653, 647.85846)
+rotation = 1.7646558
 
-[node name="Splot17" parent="." unique_id=1060742841 instance=ExtResource("2_30shy")]
-modulate = Color(0.8823581, 0.4349637, 0.10268002, 1)
-position = Vector2(500, 900)
-rotation = 2.5858166
+[node name="Splot (2, 4)" parent="." unique_id=1456492436 instance=ExtResource("2_30shy")]
+modulate = Color(0.51472133, 0.9432525, 0.5013815, 1)
+position = Vector2(466.4188, 905.32007)
+rotation = 4.0227313
 
-[node name="Splot18" parent="." unique_id=502719883 instance=ExtResource("2_30shy")]
-modulate = Color(0.86802673, 0.75255996, 0.6439174, 1)
-position = Vector2(500, 1100)
-rotation = 0.6229138
+[node name="Splot (2, 5)" parent="." unique_id=1238378754 instance=ExtResource("2_30shy")]
+modulate = Color(0.11828426, 0.6109604, 0.92055935, 1)
+position = Vector2(434.0323, 1101.2648)
+rotation = 6.1896687
 
-[node name="Splot19" parent="." unique_id=1634393014 instance=ExtResource("2_30shy")]
-modulate = Color(0.5477099, 0.8935524, 0.80613184, 1)
-position = Vector2(700, 100)
-rotation = 5.297409
+[node name="Splot (3, 0)" parent="." unique_id=1366659529 instance=ExtResource("2_30shy")]
+modulate = Color(0.47395524, 0.8154742, 0.39980152, 1)
+position = Vector2(631.21094, 34.4619)
+rotation = 4.198917
 
-[node name="Splot20" parent="." unique_id=1067935036 instance=ExtResource("2_30shy")]
-modulate = Color(0.31755093, 0.5832404, 0.3624642, 1)
-position = Vector2(700, 300)
-rotation = 3.1870332
+[node name="Splot (3, 1)" parent="." unique_id=1050060678 instance=ExtResource("2_30shy")]
+modulate = Color(0.069405235, 0.050743863, 0.5781251, 1)
+position = Vector2(703.92377, 280.93533)
+rotation = 3.723002
 
-[node name="Splot21" parent="." unique_id=438563424 instance=ExtResource("2_30shy")]
-modulate = Color(0.509543, 0.9269444, 0.061855756, 1)
-position = Vector2(700, 500)
-rotation = 0.6505865
+[node name="Splot (3, 2)" parent="." unique_id=851117729 instance=ExtResource("2_30shy")]
+modulate = Color(0.90203756, 0.84094167, 0.8931467, 1)
+position = Vector2(702.29205, 429.9248)
+rotation = 4.4657288
 
-[node name="Splot22" parent="." unique_id=402078275 instance=ExtResource("2_30shy")]
-modulate = Color(0.38211155, 0.10280464, 0.69166815, 1)
-position = Vector2(700, 700)
-rotation = 1.3580214
+[node name="Splot (3, 3)" parent="." unique_id=815131585 instance=ExtResource("2_30shy")]
+modulate = Color(0.14907964, 0.6298557, 0.10970369, 1)
+position = Vector2(648.3959, 686.5339)
+rotation = 0.13705997
 
-[node name="Splot23" parent="." unique_id=924659821 instance=ExtResource("2_30shy")]
-modulate = Color(0.30150524, 0.022428501, 0.58183634, 1)
-position = Vector2(700, 900)
-rotation = 0.6502926
+[node name="Splot (3, 4)" parent="." unique_id=1248743210 instance=ExtResource("2_30shy")]
+modulate = Color(0.51052123, 0.7816575, 0.8037722, 1)
+position = Vector2(634.2663, 844.80725)
+rotation = 5.6859837
 
-[node name="Splot24" parent="." unique_id=1139223926 instance=ExtResource("2_30shy")]
-modulate = Color(0.19735794, 0.06547562, 0.9272366, 1)
-position = Vector2(700, 1100)
-rotation = 2.2167158
+[node name="Splot (3, 5)" parent="." unique_id=23433780 instance=ExtResource("2_30shy")]
+modulate = Color(0.33282596, 0.45740026, 0.60139847, 1)
+position = Vector2(631.09985, 1051.1669)
+rotation = 2.871186
 
-[node name="Splot25" parent="." unique_id=1929229192 instance=ExtResource("2_30shy")]
-modulate = Color(0.38198075, 0.24570732, 0.89770603, 1)
-position = Vector2(900, 100)
-rotation = 2.0939913
+[node name="Splot (4, 0)" parent="." unique_id=515220590 instance=ExtResource("2_30shy")]
+modulate = Color(0.6479318, 0.788365, 0.0914273, 1)
+position = Vector2(867.4189, 94.08681)
+rotation = 1.100007
 
-[node name="Splot26" parent="." unique_id=1358484657 instance=ExtResource("2_30shy")]
-modulate = Color(0.94704306, 0.009660749, 0.40283406, 1)
-position = Vector2(900, 300)
-rotation = 2.7143788
+[node name="Splot (4, 1)" parent="." unique_id=950633772 instance=ExtResource("2_30shy")]
+modulate = Color(0.87532276, 0.3445161, 0.7710337, 1)
+position = Vector2(899.71136, 302.42642)
+rotation = 1.9903549
 
-[node name="Splot27" parent="." unique_id=1058381670 instance=ExtResource("2_30shy")]
-modulate = Color(0.99755466, 0.8106748, 0.5693475, 1)
-position = Vector2(900, 500)
-rotation = 4.528792
+[node name="Splot (4, 2)" parent="." unique_id=106919317 instance=ExtResource("2_30shy")]
+modulate = Color(0.5033292, 0.5241411, 0.44585088, 1)
+position = Vector2(876.6435, 480.73605)
+rotation = 4.998941
 
-[node name="Splot28" parent="." unique_id=596677881 instance=ExtResource("2_30shy")]
-modulate = Color(0.18494248, 0.5945336, 0.44985324, 1)
-position = Vector2(900, 700)
-rotation = 0.3538248
+[node name="Splot (4, 3)" parent="." unique_id=1544433347 instance=ExtResource("2_30shy")]
+modulate = Color(0.62220556, 0.17422697, 0.32597548, 1)
+position = Vector2(884.7884, 642.02026)
+rotation = 1.1973937
 
-[node name="Splot29" parent="." unique_id=1085093041 instance=ExtResource("2_30shy")]
-modulate = Color(0.37796652, 0.53025454, 0.042992372, 1)
-position = Vector2(900, 900)
-rotation = 2.8531933
+[node name="Splot (4, 4)" parent="." unique_id=1510823145 instance=ExtResource("2_30shy")]
+modulate = Color(0.68025434, 0.107972555, 0.07674143, 1)
+position = Vector2(816.0063, 845.1342)
+rotation = 2.1279314
 
-[node name="Splot30" parent="." unique_id=610295732 instance=ExtResource("2_30shy")]
-modulate = Color(0.9576502, 0.9884624, 0.09643155, 1)
-position = Vector2(900, 1100)
-rotation = 5.1413803
+[node name="Splot (4, 5)" parent="." unique_id=1859742842 instance=ExtResource("2_30shy")]
+modulate = Color(0.27741674, 0.38423795, 0.9301706, 1)
+position = Vector2(825.3601, 1026.8046)
+rotation = 2.5280483
 
-[node name="Splot31" parent="." unique_id=531246856 instance=ExtResource("2_30shy")]
-modulate = Color(0.07275161, 0.992058, 0.56685585, 1)
-position = Vector2(1100, 100)
-rotation = 1.2668747
+[node name="Splot (5, 0)" parent="." unique_id=1865515225 instance=ExtResource("2_30shy")]
+modulate = Color(0.7476368, 0.6314916, 0.24921355, 1)
+position = Vector2(1056.3734, 88.578125)
+rotation = 5.8350697
 
-[node name="Splot32" parent="." unique_id=1510848513 instance=ExtResource("2_30shy")]
-modulate = Color(0.5037277, 0.6642384, 0.8089309, 1)
-position = Vector2(1100, 300)
-rotation = 3.970861
+[node name="Splot (5, 1)" parent="." unique_id=1969204451 instance=ExtResource("2_30shy")]
+modulate = Color(0.5114259, 0.15236667, 0.024368957, 1)
+position = Vector2(1042.3748, 245.78644)
+rotation = 3.4680934
 
-[node name="Splot33" parent="." unique_id=898160396 instance=ExtResource("2_30shy")]
-modulate = Color(0.15395755, 0.8809176, 0.03640156, 1)
-position = Vector2(1100, 500)
-rotation = 1.6829945
+[node name="Splot (5, 2)" parent="." unique_id=1251122893 instance=ExtResource("2_30shy")]
+modulate = Color(0.07906027, 0.9889172, 0.7235645, 1)
+position = Vector2(1093.6552, 484.82043)
+rotation = 4.6851125
 
-[node name="Splot34" parent="." unique_id=1354198484 instance=ExtResource("2_30shy")]
-modulate = Color(0.036957562, 0.47945413, 0.721544, 1)
-position = Vector2(1100, 700)
-rotation = 1.5421901
+[node name="Splot (5, 3)" parent="." unique_id=1096054284 instance=ExtResource("2_30shy")]
+modulate = Color(0.6681739, 0.012526676, 0.74372566, 1)
+position = Vector2(1100.9036, 706.3793)
+rotation = 0.6883818
 
-[node name="Splot35" parent="." unique_id=2100061438 instance=ExtResource("2_30shy")]
-modulate = Color(0.14012928, 0.7813894, 0.49685475, 1)
-position = Vector2(1100, 900)
-rotation = 4.281218
+[node name="Splot (5, 4)" parent="." unique_id=1938809735 instance=ExtResource("2_30shy")]
+modulate = Color(0.3682524, 0.20028317, 0.3396844, 1)
+position = Vector2(1104.6746, 844.6347)
+rotation = 3.3669164
 
-[node name="Splot36" parent="." unique_id=1823476432 instance=ExtResource("2_30shy")]
-modulate = Color(0.6238408, 0.22280139, 0.22844338, 1)
-position = Vector2(1100, 1100)
-rotation = 0.56216484
+[node name="Splot (5, 5)" parent="." unique_id=2018961222 instance=ExtResource("2_30shy")]
+modulate = Color(0.50639164, 0.14001527, 0.42846268, 1)
+position = Vector2(1030.028, 1076.6742)
+rotation = 0.1608752
 
-[node name="Splot37" parent="." unique_id=1278570444 instance=ExtResource("2_30shy")]
-modulate = Color(0.079925716, 0.15412758, 0.46270457, 1)
-position = Vector2(1300, 100)
-rotation = 5.8652415
+[node name="Splot (6, 0)" parent="." unique_id=1497184343 instance=ExtResource("2_30shy")]
+modulate = Color(0.51474214, 0.80522543, 0.88219064, 1)
+position = Vector2(1216.9751, 77.90581)
+rotation = 3.4976094
 
-[node name="Splot38" parent="." unique_id=616723594 instance=ExtResource("2_30shy")]
-modulate = Color(0.4324926, 0.3572866, 0.7948668, 1)
-position = Vector2(1300, 300)
-rotation = 5.3630414
+[node name="Splot (6, 1)" parent="." unique_id=128658132 instance=ExtResource("2_30shy")]
+modulate = Color(0.3961407, 0.87597156, 0.13983412, 1)
+position = Vector2(1222.6298, 235.51324)
+rotation = 1.0550592
 
-[node name="Splot39" parent="." unique_id=1004201458 instance=ExtResource("2_30shy")]
-modulate = Color(0.27530652, 0.2572978, 0.2724635, 1)
-position = Vector2(1300, 500)
-rotation = 4.936483
+[node name="Splot (6, 2)" parent="." unique_id=2055864329 instance=ExtResource("2_30shy")]
+modulate = Color(0.8289953, 0.43578586, 0.003988619, 1)
+position = Vector2(1213.9243, 487.97437)
+rotation = 4.750701
 
-[node name="Splot40" parent="." unique_id=1808044813 instance=ExtResource("2_30shy")]
-modulate = Color(0.91180646, 0.9328128, 0.07560669, 1)
-position = Vector2(1300, 700)
-rotation = 6.1854
+[node name="Splot (6, 3)" parent="." unique_id=519267608 instance=ExtResource("2_30shy")]
+modulate = Color(0.2933258, 0.29387093, 0.16923521, 1)
+position = Vector2(1306.657, 664.2695)
+rotation = 5.3831573
 
-[node name="Splot41" parent="." unique_id=988030389 instance=ExtResource("2_30shy")]
-modulate = Color(0.45109987, 0.1337814, 0.7088993, 1)
-position = Vector2(1300, 900)
-rotation = 4.242609
+[node name="Splot (6, 4)" parent="." unique_id=877511470 instance=ExtResource("2_30shy")]
+modulate = Color(0.6822082, 0.17225279, 0.9273586, 1)
+position = Vector2(1264.7383, 870.7249)
+rotation = 3.9952092
 
-[node name="Splot42" parent="." unique_id=1042206415 instance=ExtResource("2_30shy")]
-modulate = Color(0.34779346, 0.726628, 0.49508902, 1)
-position = Vector2(1300, 1100)
-rotation = 0.9336339
+[node name="Splot (6, 5)" parent="." unique_id=486998408 instance=ExtResource("2_30shy")]
+modulate = Color(0.7113971, 0.9233607, 0.3765059, 1)
+position = Vector2(1217.8894, 1071.5342)
+rotation = 4.727734
 
-[node name="Splot43" parent="." unique_id=854824533 instance=ExtResource("2_30shy")]
-modulate = Color(0.82532114, 0.9745677, 0.4312683, 1)
-position = Vector2(1500, 100)
-rotation = 3.949026
+[node name="Splot (7, 0)" parent="." unique_id=253627057 instance=ExtResource("2_30shy")]
+modulate = Color(0.13129316, 0.9009183, 0.38464338, 1)
+position = Vector2(1484.0219, 88.567215)
+rotation = 5.59867
 
-[node name="Splot44" parent="." unique_id=75746996 instance=ExtResource("2_30shy")]
-modulate = Color(0.6740842, 0.41405767, 0.18501186, 1)
-position = Vector2(1500, 300)
-rotation = 2.8693256
+[node name="Splot (7, 1)" parent="." unique_id=938714071 instance=ExtResource("2_30shy")]
+modulate = Color(0.38551795, 0.03859931, 0.62774336, 1)
+position = Vector2(1483.1057, 255.3965)
+rotation = 4.0542684
 
-[node name="Splot45" parent="." unique_id=580139608 instance=ExtResource("2_30shy")]
-modulate = Color(0.56692284, 0.7507309, 0.25937304, 1)
-position = Vector2(1500, 500)
-rotation = 4.8195148
+[node name="Splot (7, 2)" parent="." unique_id=767089366 instance=ExtResource("2_30shy")]
+modulate = Color(0.42123666, 0.26665288, 0.5627334, 1)
+position = Vector2(1458.3672, 468.15363)
+rotation = 1.8140651
 
-[node name="Splot46" parent="." unique_id=69190825 instance=ExtResource("2_30shy")]
-modulate = Color(0.8488209, 0.33709863, 0.029254135, 1)
-position = Vector2(1500, 700)
-rotation = 1.5698844
+[node name="Splot (7, 3)" parent="." unique_id=839858862 instance=ExtResource("2_30shy")]
+modulate = Color(0.867753, 0.38172942, 0.16178483, 1)
+position = Vector2(1450.4602, 614.9176)
+rotation = 1.6450788
 
-[node name="Splot47" parent="." unique_id=1286055847 instance=ExtResource("2_30shy")]
-modulate = Color(0.30997834, 0.030971456, 0.6003781, 1)
-position = Vector2(1500, 900)
-rotation = 1.1033012
+[node name="Splot (7, 4)" parent="." unique_id=1398052921 instance=ExtResource("2_30shy")]
+modulate = Color(0.34855217, 0.488599, 0.059079435, 1)
+position = Vector2(1414.3674, 829.3363)
+rotation = 0.0068005202
 
-[node name="Splot48" parent="." unique_id=1091746746 instance=ExtResource("2_30shy")]
-modulate = Color(0.12213097, 0.30727732, 0.9555725, 1)
-position = Vector2(1500, 1100)
-rotation = 0.88749546
+[node name="Splot (7, 5)" parent="." unique_id=312900279 instance=ExtResource("2_30shy")]
+modulate = Color(0.4694896, 0.40418157, 0.61469054, 1)
+position = Vector2(1451.8383, 1083.8794)
+rotation = 0.9816287
 
-[node name="Splot49" parent="." unique_id=982119516 instance=ExtResource("2_30shy")]
-modulate = Color(0.013751658, 0.4371019, 0.26595378, 1)
-position = Vector2(1700, 100)
-rotation = 3.363394
+[node name="Splot (8, 0)" parent="." unique_id=147141656 instance=ExtResource("2_30shy")]
+modulate = Color(0.31659603, 0.04362732, 0.7590961, 1)
+position = Vector2(1667.8024, 13.132938)
+rotation = 5.4788303
 
-[node name="Splot50" parent="." unique_id=275057019 instance=ExtResource("2_30shy")]
-modulate = Color(0.037297193, 0.9846798, 0.4738462, 1)
-position = Vector2(1700, 300)
-rotation = 3.1978161
+[node name="Splot (8, 1)" parent="." unique_id=1669372130 instance=ExtResource("2_30shy")]
+modulate = Color(0.039173983, 0.4729779, 0.06426461, 1)
+position = Vector2(1700.6667, 263.23703)
+rotation = 1.2457098
 
-[node name="Splot51" parent="." unique_id=1593351631 instance=ExtResource("2_30shy")]
-modulate = Color(0.6571914, 0.33485875, 0.8654712, 1)
-position = Vector2(1700, 500)
-rotation = 1.0745078
+[node name="Splot (8, 2)" parent="." unique_id=1123485606 instance=ExtResource("2_30shy")]
+modulate = Color(0.38875812, 0.15994939, 0.81896114, 1)
+position = Vector2(1629.4843, 499.9684)
+rotation = 5.0912538
 
-[node name="Splot52" parent="." unique_id=1196761291 instance=ExtResource("2_30shy")]
-modulate = Color(0.38163644, 0.5966424, 0.12362039, 1)
-position = Vector2(1700, 700)
-rotation = 6.132184
+[node name="Splot (8, 3)" parent="." unique_id=782674946 instance=ExtResource("2_30shy")]
+modulate = Color(0.4377318, 0.0070928913, 0.07594029, 1)
+position = Vector2(1617.4037, 629.4662)
+rotation = 1.898744
 
-[node name="Splot53" parent="." unique_id=61034766 instance=ExtResource("2_30shy")]
-modulate = Color(0.13076657, 0.50938094, 0.49095908, 1)
-position = Vector2(1700, 900)
-rotation = 1.780672
+[node name="Splot (8, 4)" parent="." unique_id=2107234765 instance=ExtResource("2_30shy")]
+modulate = Color(0.42691088, 0.57884896, 0.6391826, 1)
+position = Vector2(1673.9961, 836.1811)
+rotation = 3.634634
 
-[node name="Splot54" parent="." unique_id=670997404 instance=ExtResource("2_30shy")]
-modulate = Color(0.6352641, 0.9723603, 0.34047315, 1)
-position = Vector2(1700, 1100)
-rotation = 1.860714
+[node name="Splot (8, 5)" parent="." unique_id=1860888973 instance=ExtResource("2_30shy")]
+modulate = Color(0.90852314, 0.31034806, 0.24651808, 1)
+position = Vector2(1692.4628, 1029.578)
+rotation = 5.3921957
 
-[node name="Splot55" parent="." unique_id=1114230031 instance=ExtResource("2_30shy")]
-modulate = Color(0.7402576, 0.65915793, 0.5228963, 1)
-position = Vector2(1900, 100)
-rotation = 5.9841104
+[node name="Splot (9, 0)" parent="." unique_id=8641161 instance=ExtResource("2_30shy")]
+modulate = Color(0.6035921, 0.7138915, 0.8309749, 1)
+position = Vector2(1902.119, 58.544018)
+rotation = 5.324105
 
-[node name="Splot56" parent="." unique_id=108769113 instance=ExtResource("2_30shy")]
-modulate = Color(0.2844526, 0.028964076, 0.4028801, 1)
-position = Vector2(1900, 300)
-rotation = 0.3645894
+[node name="Splot (9, 1)" parent="." unique_id=1667422622 instance=ExtResource("2_30shy")]
+modulate = Color(0.7030811, 0.55206656, 0.12445648, 1)
+position = Vector2(1873.8494, 278.85852)
+rotation = 1.5396509
 
-[node name="Splot57" parent="." unique_id=80496227 instance=ExtResource("2_30shy")]
-modulate = Color(0.12742676, 0.14510368, 0.13317508, 1)
-position = Vector2(1900, 500)
-rotation = 1.6739798
+[node name="Splot (9, 2)" parent="." unique_id=1184992585 instance=ExtResource("2_30shy")]
+modulate = Color(0.08429222, 0.5274746, 0.3267802, 1)
+position = Vector2(1834.4493, 490.08325)
+rotation = 5.3415585
 
-[node name="Splot58" parent="." unique_id=1453486046 instance=ExtResource("2_30shy")]
-modulate = Color(0.13531677, 0.42362484, 0.005642428, 1)
-position = Vector2(1900, 700)
-rotation = 4.2336082
+[node name="Splot (9, 3)" parent="." unique_id=577185636 instance=ExtResource("2_30shy")]
+modulate = Color(0.21306475, 0.44663945, 0.28795418, 1)
+position = Vector2(1842.9912, 674.1466)
+rotation = 1.7015488
 
-[node name="Splot59" parent="." unique_id=1620860185 instance=ExtResource("2_30shy")]
-modulate = Color(0.4227961, 0.8153791, 0.2003773, 1)
-position = Vector2(1900, 900)
-rotation = 5.364913
+[node name="Splot (9, 4)" parent="." unique_id=1613837943 instance=ExtResource("2_30shy")]
+modulate = Color(0.28974786, 0.08842746, 0.60394245, 1)
+position = Vector2(1834.5116, 839.4788)
+rotation = 3.1894836
 
-[node name="Splot60" parent="." unique_id=1004411687 instance=ExtResource("2_30shy")]
-modulate = Color(0.8866994, 0.3829797, 0.40415096, 1)
-position = Vector2(1900, 1100)
-rotation = 2.0498967
+[node name="Splot (9, 5)" parent="." unique_id=214742555 instance=ExtResource("2_30shy")]
+modulate = Color(0.119845785, 0.86664844, 0.63909054, 1)
+position = Vector2(1899.9221, 1069.2488)
+rotation = 4.8836174
