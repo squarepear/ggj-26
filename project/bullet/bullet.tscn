@@ -14,6 +14,7 @@ radius = 16.0
 
 [node name="Bullet" type="CharacterBody2D" unique_id=496901937]
 collision_layer = 4
+collision_mask = 0
 script = ExtResource("1_6wip1")
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=362001725]
