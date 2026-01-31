@@ -37,3 +37,11 @@ script = ExtResource("7_sc4t8")
 _bullet_scenes = Array[PackedScene]([ExtResource("5_mmdvd")])
 _wave_component = NodePath("../WaveComponent")
 metadata/_custom_type_script = "uid://clntnlnf2eit2"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=499848769]
+
+[node name="WaveLabel" type="Label" parent="CanvasLayer" unique_id=853986234]
+unique_name_in_owner = true
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 64

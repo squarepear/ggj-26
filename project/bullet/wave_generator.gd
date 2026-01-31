@@ -3,6 +3,8 @@ extends Node
 
 const BOUNDARY_OFFSET := 64.0
 
+var _current_wave: int = 0
+
 @export var _bullet_scenes: Array[PackedScene] = []
 @export var _wave_component: WaveComponent
 
@@ -12,6 +14,7 @@ func _ready() -> void:
 
 
 func generate() -> void:
+	_current_wave += 1
 	for i in 5:
 		_wave_component.add_spawner(_get_random_spawn_point(), _bullet_scenes[0])
 
@@ -37,3 +40,7 @@ func _get_random_spawn_point() -> Vector2:
 	pos -= boundary.size.y
 
 	return boundary.position + Vector2.DOWN * pos + Vector2.RIGHT * boundary.size.x
+
+
+func get_current_wave() -> int:
+	return _current_wave

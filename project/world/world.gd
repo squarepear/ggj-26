@@ -12,3 +12,8 @@ func _ready() -> void:
 func next_wave() -> void:
 	_wave_generator.generate()
 	_wave_component.start()
+	_display_wave_label()
+
+
+func _display_wave_label() -> void:
+	%WaveLabel.text = "Wave " + str(_wave_generator.get_current_wave())
