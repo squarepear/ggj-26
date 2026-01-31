@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ihep336x6bpj" path="res://bullet/bullet.gd" id="1_6wip1"]
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="1_k2aps"]
-[ext_resource type="Script" path="res://component/target_component.gd" id="3_0qjqd"]
+[ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="3_0qjqd"]
 [ext_resource type="Texture2D" uid="uid://ckhc57s5njdfm" path="res://bullet/bullet.png" id="4_xvnxm"]
 [ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_ynyjt"]
 
@@ -40,3 +40,7 @@ metadata/_custom_type_script = "uid://bjhx4isrdnkyh"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=417156219]
 shape = SubResource("CircleShape2D_3udht")
 debug_color = Color(0.8409385, 0.3572527, 0.37389633, 0.41960785)
+
+[node name="VisibleOnScreenNotifier" type="VisibleOnScreenNotifier2D" parent="." unique_id=1172766195]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier" to="." method="_on_visible_on_screen_notifier_screen_exited"]
