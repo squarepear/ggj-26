@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://bplp01ylsndtr"]
 
-[ext_resource type="Texture2D" uid="uid://c25jdqg3rjnyy" path="res://icon.svg" id="1_oul6g"]
-[ext_resource type="Script" uid="uid://b3cw2fpnyxy3d" path="res://player/player.gd" id="1_yw30f"]
+[ext_resource type="Script" path="res://player/player.gd" id="1_yw30f"]
+[ext_resource type="Texture2D" uid="uid://cbp7c2l6djx6t" path="res://player/leg.png" id="2_qjkh3"]
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="2_rkbax"]
+[ext_resource type="Texture2D" uid="uid://ch0jm2lovcsp7" path="res://player/player_head.png" id="2_yw30f"]
 [ext_resource type="Script" uid="uid://dhru0yrcpyree" path="res://component/input_component.gd" id="4_qjkh3"]
+[ext_resource type="Script" uid="uid://dlv8l1edgdbu2" path="res://component/hitbox_component.gd" id="5_qjkh3"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kqu6x"]
 radius = 64.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_qjkh3"]
+radius = 96.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1847389676]
 motion_mode = 1
@@ -15,8 +20,20 @@ script = ExtResource("1_yw30f")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1126802158]
 shape = SubResource("CircleShape2D_kqu6x")
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=352353292]
-texture = ExtResource("1_oul6g")
+[node name="Node" type="Node2D" parent="." unique_id=803590991]
+
+[node name="LegLeft" type="Sprite2D" parent="Node" unique_id=1473980609]
+position = Vector2(-37, 68)
+rotation = -3.1415927
+scale = Vector2(1, -1)
+texture = ExtResource("2_qjkh3")
+
+[node name="LegRight" type="Sprite2D" parent="Node" unique_id=1938725971]
+position = Vector2(39, 68)
+texture = ExtResource("2_qjkh3")
+
+[node name="Head" type="Sprite2D" parent="Node" unique_id=352353292]
+texture = ExtResource("2_yw30f")
 
 [node name="MovementCompenent" type="Node" parent="." unique_id=1891422578 node_paths=PackedStringArray("_body")]
 script = ExtResource("2_rkbax")
@@ -26,3 +43,10 @@ metadata/_custom_type_script = "uid://dfu1hk8ne0eau"
 [node name="InputComponent" type="Node" parent="." unique_id=335590015]
 script = ExtResource("4_qjkh3")
 metadata/_custom_type_script = "uid://dhru0yrcpyree"
+
+[node name="HitboxComponent" type="Area2D" parent="." unique_id=2096247725]
+script = ExtResource("5_qjkh3")
+metadata/_custom_type_script = "uid://dlv8l1edgdbu2"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent" unique_id=927616664]
+shape = SubResource("CircleShape2D_qjkh3")
