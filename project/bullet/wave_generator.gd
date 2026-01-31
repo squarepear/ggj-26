@@ -11,11 +11,7 @@ func _ready() -> void:
 	assert(_wave_component, "target wave component must be assigned!")
 
 	for i in 5:
-		print(_get_random_spawn_point())
-		var spawner := SpawnerComponent.new()
-		_wave_component.add_child(spawner)
-		spawner.global_position = _get_random_spawn_point()
-		spawner.bullet = _bullet_scenes[0]
+		_wave_component.add_spawner(_get_random_spawn_point(), _bullet_scenes[0])
 
 
 # Gets a random point along the boundary of the screen with an offset of BOUNDARY_OFFSET
