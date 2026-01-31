@@ -4,6 +4,7 @@
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="1_k2aps"]
 [ext_resource type="Texture2D" uid="uid://u425shvi7j5m" path="res://bullet/bullet_gp.png" id="2_ynyjt"]
 [ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="3_0qjqd"]
+
 [ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_ynyjt"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ynyjt"]
