@@ -1,10 +1,10 @@
-[gd_scene format=3 uid="uid://c54hqm4wfxq0w"]
+[gd_scene format=3 uid="uid://b778kqpgbopad"]
 
-[ext_resource type="Script" uid="uid://ihep336x6bpj" path="res://bullet/bullet.gd" id="1_6wip1"]
-[ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="1_k2aps"]
-[ext_resource type="Texture2D" uid="uid://u425shvi7j5m" path="res://bullet/bullet_gp.png" id="2_ynyjt"]
-[ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="3_0qjqd"]
-[ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_ynyjt"]
+[ext_resource type="Script" uid="uid://ihep336x6bpj" path="res://bullet/bullet.gd" id="1_0p4oa"]
+[ext_resource type="Texture2D" uid="uid://u425shvi7j5m" path="res://bullet/bullet_gp.png" id="2_0oyub"]
+[ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="3_iu5d6"]
+[ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="4_nrvqv"]
+[ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_w467u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ynyjt"]
 radius = 6.0
@@ -15,27 +15,28 @@ radius = 16.0
 [node name="Bullet" type="CharacterBody2D" unique_id=496901937]
 collision_layer = 4
 collision_mask = 0
-script = ExtResource("1_6wip1")
+script = ExtResource("1_0p4oa")
+size = 2
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=362001725]
-texture = ExtResource("2_ynyjt")
+texture = ExtResource("2_0oyub")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=954772255]
 shape = SubResource("CircleShape2D_ynyjt")
 
 [node name="MovementCompenent" type="Node" parent="." unique_id=124393932 node_paths=PackedStringArray("_body")]
-script = ExtResource("1_k2aps")
+script = ExtResource("3_iu5d6")
 _body = NodePath("..")
 metadata/_custom_type_script = "uid://dfu1hk8ne0eau"
 
 [node name="TargetComponent" type="Node" parent="." unique_id=1745173053 node_paths=PackedStringArray("_body")]
-script = ExtResource("3_0qjqd")
+script = ExtResource("4_nrvqv")
 _body = NodePath("..")
 
 [node name="HurtboxComponent" type="Area2D" parent="." unique_id=206779997]
 collision_layer = 4
 collision_mask = 3
-script = ExtResource("5_ynyjt")
+script = ExtResource("5_w467u")
 metadata/_custom_type_script = "uid://bjhx4isrdnkyh"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=417156219]
