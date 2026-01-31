@@ -1,9 +1,9 @@
 [gd_scene format=4 uid="uid://dv6lho1oy2gt8"]
 
 [ext_resource type="PackedScene" uid="uid://bplp01ylsndtr" path="res://player/player.tscn" id="1_6xmxd"]
-[ext_resource type="Script" uid="uid://cwbtaffht7yjp" path="res://world/world.gd" id="1_fn3g3"]
+[ext_resource type="Script" path="res://world/world.gd" id="1_fn3g3"]
 [ext_resource type="Texture2D" uid="uid://em5ikda2vpnt" path="res://world/background.png" id="1_tcf2h"]
-[ext_resource type="Script" uid="uid://drj3jwutag7vt" path="res://component/wave_component.gd" id="3_h5o24"]
+[ext_resource type="Script" path="res://component/wave_component.gd" id="3_h5o24"]
 [ext_resource type="Script" uid="uid://baug51yyody53" path="res://component/spawner_component.gd" id="4_mmdvd"]
 [ext_resource type="PackedScene" uid="uid://c54hqm4wfxq0w" path="res://bullet/bullet.tscn" id="5_mmdvd"]
 
@@ -29,7 +29,6 @@ position = Vector2(828, 581)
 [node name="WaveComponent" type="Node" parent="." unique_id=746619383 node_paths=PackedStringArray("target")]
 script = ExtResource("3_h5o24")
 target = NodePath("../Player")
-metadata/_custom_type_script = "uid://drj3jwutag7vt"
 
 [node name="SpawnerComponent" type="Node2D" parent="WaveComponent" unique_id=1570339531]
 script = ExtResource("4_mmdvd")

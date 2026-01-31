@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://dasglho3nspfe"]
+
+[ext_resource type="Texture2D" uid="uid://bo24cax0s15j5" path="res://player/vision_blocker/splot.png" id="1_qmibn"]
+
+[node name="Splot" type="Sprite2D" unique_id=1167253487]
+texture = ExtResource("1_qmibn")

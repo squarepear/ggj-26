@@ -11,6 +11,7 @@
 [ext_resource type="Texture2D" uid="uid://dnf5qowvhs3j5" path="res://player/sprites/player_head_blink2_left.png" id="5_hg6s5"]
 [ext_resource type="Script" uid="uid://dlv8l1edgdbu2" path="res://component/hitbox_component.gd" id="5_qjkh3"]
 [ext_resource type="Script" uid="uid://cn46gwwr8bncx" path="res://component/health_component.gd" id="7_boad6"]
+[ext_resource type="PackedScene" uid="uid://cm2ejclgyarrf" path="res://player/vision_blocker/vision_blocker.tscn" id="8_rgyib"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_kqu6x"]
 radius = 64.0
@@ -106,10 +107,12 @@ shape = SubResource("CircleShape2D_qjkh3")
 script = ExtResource("7_boad6")
 metadata/_custom_type_script = "uid://cn46gwwr8bncx"
 
-[connection signal="hit" from="HitboxComponent" to="." method="_on_hitbox_component_hit"]
+[node name="VisionBlocker" parent="." unique_id=92788859 instance=ExtResource("8_rgyib")]
+visible = false
 
 [node name="BlinkTimer" type="Timer" parent="." unique_id=278008534]
 wait_time = 5.0
 autostart = true
 
+[connection signal="hit" from="HitboxComponent" to="." method="_on_hitbox_component_hit"]
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]

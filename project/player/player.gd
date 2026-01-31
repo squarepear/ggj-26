@@ -3,11 +3,14 @@ extends CharacterBody2D
 @onready var _input_component: InputComponent = $InputComponent
 @onready var _movement_compenent: MovementCompenent = $MovementCompenent
 @onready var health_component: HealthComponent = $HealthComponent
+@onready var _hitbox_component: HitboxComponent = $HitboxComponent
+@onready var _vision_blocker: VisionBlocker = $VisionBlocker
 
 
 
 func _ready():
 	%Head.play("default")
+	_hitbox_component.hit.connect(_vision_blocker.splat.unbind(1))
 
 
 func _physics_process(_delta: float) -> void:
