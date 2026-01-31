@@ -8,7 +8,7 @@ var job_done := false
 
 func aim(direction: Vector2) -> void:
 	super(direction)
-	_spawner_component._settings.direction = -_movement_compenent._dir
+	_spawner_component.settings.direction = -_movement_compenent._dir
 
 
 func _physics_process(_delta: float) -> void:
@@ -23,8 +23,10 @@ func _on_timer_timeout() -> void:
 		job_done = true
 		return
 
+	_spawner_component.settings.is_ghost = _is_ghost
+	_spawner_component.hit.connect(hit.emit)
 	_spawner_component.spawn()
-	
+
 
 func _on_visible_on_screen_notifier_screen_exited() -> void:
 	screen_exited = true

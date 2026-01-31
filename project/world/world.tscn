@@ -9,7 +9,6 @@
 [ext_resource type="Script" uid="uid://clntnlnf2eit2" path="res://bullet/wave_generator.gd" id="7_sc4t8"]
 [ext_resource type="PackedScene" uid="uid://r6l2lwvbok18" path="res://bullet/fast_bullet.tscn" id="8_ai45w"]
 [ext_resource type="PackedScene" uid="uid://d2wex0bjfvjgt" path="res://bullet/big_bullet.tscn" id="9_4papg"]
-[ext_resource type="PackedScene" uid="uid://chak4ltt123op" path="res://bullet/splitter_bullet.tscn" id="10_fyhu2"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcf2h"]
 texture = ExtResource("1_tcf2h")
@@ -89,11 +88,17 @@ position = Vector2(828, 581)
 unique_name_in_owner = true
 script = ExtResource("3_h5o24")
 
-[node name="WaveGenerator" type="Node" parent="." unique_id=2090635365 node_paths=PackedStringArray("_wave_component")]
+[node name="GhostWaveComponent" type="Node" parent="." unique_id=1219595942]
+unique_name_in_owner = true
+script = ExtResource("3_h5o24")
+metadata/_custom_type_script = "uid://drj3jwutag7vt"
+
+[node name="WaveGenerator" type="Node" parent="." unique_id=2090635365 node_paths=PackedStringArray("_wave_component", "_ghost_wave_component")]
 unique_name_in_owner = true
 script = ExtResource("7_sc4t8")
-_bullet_scenes = Array[PackedScene]([ExtResource("5_mmdvd"), ExtResource("8_ai45w"), ExtResource("9_4papg"), ExtResource("10_fyhu2")])
+_bullet_scenes = Array[PackedScene]([ExtResource("5_mmdvd"), ExtResource("8_ai45w"), ExtResource("9_4papg")])
 _wave_component = NodePath("../WaveComponent")
+_ghost_wave_component = NodePath("../GhostWaveComponent")
 metadata/_custom_type_script = "uid://clntnlnf2eit2"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=499848769]

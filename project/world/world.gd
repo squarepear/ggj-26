@@ -13,7 +13,6 @@ func _ready() -> void:
 func next_wave() -> void:
 	if player_living:
 		_wave_generator.generate()
-		_wave_component.start()
 		_display_wave_label()
 
 

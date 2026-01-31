@@ -15,8 +15,9 @@ radius = 6.0
 [sub_resource type="CircleShape2D" id="CircleShape2D_3udht"]
 radius = 16.0
 
-[sub_resource type="Resource" id="Resource_wm0qd"]
+[sub_resource type="Resource" id="Resource_vealc"]
 script = ExtResource("7_vealc")
+direction = Vector2(0, 0)
 delay = 1.0
 bullet_scene = ExtResource("7_85rdh")
 metadata/_custom_type_script = "uid://lbhiseaheje4"
@@ -55,7 +56,7 @@ debug_color = Color(0.8409385, 0.3572527, 0.37389633, 0.41960785)
 
 [node name="SpawnerComponent" type="Node2D" parent="." unique_id=401337838]
 script = ExtResource("6_wm0qd")
-_settings = SubResource("Resource_wm0qd")
+settings = SubResource("Resource_vealc")
 metadata/_custom_type_script = "uid://baug51yyody53"
 
 [node name="Timer" type="Timer" parent="." unique_id=1602839334]
