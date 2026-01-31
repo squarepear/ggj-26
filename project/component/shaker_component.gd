@@ -8,3 +8,7 @@ func shake() -> void:
 	tween.tween_property(self, "rotation_degrees", 15 * mult, 0.08)
 	tween.tween_property(self, "rotation_degrees", -15 * mult, 0.08)
 	tween.tween_property(self, "rotation_degrees", 0, 0.1)
+
+
+func lean(angle: int) -> void:
+	rotation_degrees = angle

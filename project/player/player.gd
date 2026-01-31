@@ -21,6 +21,7 @@ func _physics_process(_delta: float) -> void:
 		_input_component.apply_inputs()
 		_movement_compenent.set_dir(_input_component.dir)
 		_movement_compenent.update()
+		_shaker_component.lean(_input_component.dir.x * 10)
 
 
 

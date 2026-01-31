@@ -2,7 +2,7 @@ class_name MovementCompenent
 extends Node
 
 @export var _body: CharacterBody2D
-@export var speed := 256.0
+@export var speed := 512.0
 
 var _dir := Vector2.ZERO
 
