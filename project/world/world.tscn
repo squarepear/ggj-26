@@ -142,3 +142,5 @@ shape = SubResource("RectangleShape2D_4papg")
 [node name="WallBottom" type="CollisionShape2D" parent="Walls" unique_id=2009856690]
 position = Vector2(969, 1099)
 shape = SubResource("RectangleShape2D_fyhu2")
+
+[connection signal="killed" from="Player" to="." method="_on_player_killed"]
