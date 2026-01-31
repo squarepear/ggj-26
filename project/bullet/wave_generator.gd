@@ -10,6 +10,8 @@ const BOUNDARY_OFFSET := 64.0
 func _ready() -> void:
 	assert(_wave_component, "target wave component must be assigned!")
 
+
+func generate() -> void:
 	for i in 5:
 		_wave_component.add_spawner(_get_random_spawn_point(), _bullet_scenes[0])
 
