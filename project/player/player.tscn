@@ -107,4 +107,5 @@ wait_time = 5.0
 autostart = true
 
 [connection signal="hit" from="HitboxComponent" to="." method="_on_hitbox_component_hit"]
+[connection signal="fully_splotted" from="VisionBlocker" to="." method="_on_vision_blocker_fully_splotted"]
 [connection signal="timeout" from="BlinkTimer" to="." method="_on_blink_timer_timeout"]

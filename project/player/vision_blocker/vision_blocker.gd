@@ -4,6 +4,8 @@ extends CanvasLayer
 
 const SPLOT_SCENE := preload("res://player/vision_blocker/splot.tscn")
 
+signal fully_splotted
+
 @export_tool_button("Randomize", "RandomNumberGenerator")
 var _trigger_action: Callable = _spread
 var _colors: Array[Color] = [Color.hex(0x19397dff), Color.hex(0xa7d354ff), Color.hex(0x7c2d97ff), Color.hex(0xd14471ff), Color.hex(0x42c39dff), Color.hex(0xefeac3ff), Color.hex(0x258b73ff)]
@@ -36,6 +38,7 @@ func _ready() -> void:
 
 func splat() -> void:
 	if _hidden.get_child_count() == 0:
+		fully_splotted.emit()
 		return
 
 	var index := randi() % _hidden.get_child_count()

@@ -34,3 +34,7 @@ func _blink():
 
 func _on_blink_timer_timeout() -> void:
 	_blink()
+
+
+func _on_vision_blocker_fully_splotted() -> void:
+	print("You died")
