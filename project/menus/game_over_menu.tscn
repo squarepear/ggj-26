@@ -1,0 +1,61 @@
+[gd_scene format=3 uid="uid://bfga0eemreaty"]
+
+[ext_resource type="Script" uid="uid://crlxd1yihh4ru" path="res://menus/game_over_menu.gd" id="1_kqwex"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kqwex"]
+bg_color = Color(0.039215688, 0.039215688, 0.29411766, 0.3137255)
+corner_radius_top_left = 30
+corner_radius_top_right = 30
+corner_radius_bottom_right = 30
+corner_radius_bottom_left = 30
+
+[node name="GameOverMenu" type="Control" unique_id=1474817016]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kqwex")
+
+[node name="PanelContainer" type="PanelContainer" parent="." unique_id=402613665]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -546.25
+offset_top = -333.0
+offset_right = 546.25
+offset_bottom = 333.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_kqwex")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer" unique_id=1371184607]
+layout_mode = 2
+alignment = 1
+
+[node name="YouSurvivedLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=1255943950]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.91764706, 0.7647059, 1)
+theme_override_font_sizes/font_size = 148
+text = "You survived"
+horizontal_alignment = 1
+
+[node name="NumberOfWavesLabel" type="Label" parent="PanelContainer/VBoxContainer" unique_id=571783691]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.91764706, 0.7647059, 1)
+theme_override_font_sizes/font_size = 148
+text = "8 waves."
+horizontal_alignment = 1
+
+[node name="PlayAgainButton" type="Button" parent="PanelContainer/VBoxContainer" unique_id=1523292628]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9372549, 0.91764706, 0.7647059, 1)
+theme_override_font_sizes/font_size = 128
+text = "Play again?"
+
+[connection signal="pressed" from="PanelContainer/VBoxContainer/PlayAgainButton" to="." method="_on_play_again_button_pressed"]
