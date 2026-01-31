@@ -11,4 +11,4 @@ func set_target(target) -> void:
 
 func get_target_direction() -> Vector2:
 	assert(_target != null, "Bullet does not have a target.")
-	return _target.global_position - _body.global_position
+	return (_target.global_position - _body.global_position).normalized()
