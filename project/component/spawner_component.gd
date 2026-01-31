@@ -5,7 +5,6 @@ extends Node2D
 
 
 func spawn(target):
-	print(target)
 	var bullet_instance = bullet.instantiate()
 	add_child(bullet_instance)
 	bullet_instance.set_target(target)
