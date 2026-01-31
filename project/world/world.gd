@@ -4,6 +4,8 @@ const GAME_OVER = preload("res://menus/game_over_menu.tscn")
 
 @onready var _wave_component: WaveComponent = %WaveComponent
 @onready var _wave_generator: WaveGenerator = %WaveGenerator
+@onready var _death_sound: AudioStreamPlayer = %DeathSound
+
 
 var _game_over := false
 var player_living := true
@@ -26,6 +28,7 @@ func _display_wave_label() -> void:
 
 func _on_player_killed() -> void:
 	if !_game_over:
+		_death_sound.play()
 		player_living = false
 		_game_over = true
 		var _game_over = GAME_OVER.instantiate()

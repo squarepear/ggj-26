@@ -9,6 +9,8 @@
 [ext_resource type="Script" uid="uid://clntnlnf2eit2" path="res://bullet/wave_generator.gd" id="7_sc4t8"]
 [ext_resource type="PackedScene" uid="uid://r6l2lwvbok18" path="res://bullet/fast_bullet.tscn" id="8_ai45w"]
 [ext_resource type="PackedScene" uid="uid://d2wex0bjfvjgt" path="res://bullet/big_bullet.tscn" id="9_4papg"]
+[ext_resource type="AudioStream" uid="uid://cq371c3jnflwh" path="res://world/GGJ_2026_Paranoid_Speed.ogg" id="10_fyhu2"]
+[ext_resource type="AudioStream" uid="uid://deaiy8m8ut53y" path="res://player/GGJ_2026_DeathSound.wav" id="11_ov2xu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_tcf2h"]
 texture = ExtResource("1_tcf2h")
@@ -148,5 +150,13 @@ shape = SubResource("RectangleShape2D_4papg")
 [node name="WallBottom" type="CollisionShape2D" parent="Walls" unique_id=2009856690]
 position = Vector2(969, 1099)
 shape = SubResource("RectangleShape2D_fyhu2")
+
+[node name="Music" type="AudioStreamPlayer" parent="." unique_id=747289092]
+stream = ExtResource("10_fyhu2")
+autoplay = true
+
+[node name="DeathSound" type="AudioStreamPlayer" parent="." unique_id=893756000]
+unique_name_in_owner = true
+stream = ExtResource("11_ov2xu")
 
 [connection signal="killed" from="Player" to="." method="_on_player_killed"]

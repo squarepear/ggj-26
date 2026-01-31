@@ -8,6 +8,8 @@ signal killed
 @onready var _vision_blocker: VisionBlocker = $VisionBlocker
 @onready var _shaker_component: ShakerComponent = $ShakerComponent
 
+
+
 var can_move := true
 
 func _ready():
