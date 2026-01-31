@@ -30,8 +30,9 @@ func _on_bullet_screen_exited() -> void:
 
 func _on_timer_timeout() -> void:
 	var bullet_instance: Bullet = bullet.instantiate()
-	add_child(bullet_instance)
-	bullet_instance.screen_exited.connect(_on_bullet_screen_exited)
+	get_tree().get_root().add_child(bullet_instance)
+	bullet_instance.global_position = global_position
+	bullet_instance.job_completed.connect(_on_bullet_screen_exited)
 	bullet_instance.set_target(_target)
 	bullet_instance.initialize()
 	spawned.emit()

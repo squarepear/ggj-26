@@ -1,7 +1,7 @@
 class_name Bullet
 extends CharacterBody2D
 
-signal screen_exited
+signal job_completed
 
 const GHOST_COLLISION_LAYER := 8
 
@@ -31,4 +31,5 @@ func set_target(target) -> void:
 
 
 func _on_visible_on_screen_notifier_screen_exited() -> void:
-	screen_exited.emit()
+	job_completed.emit()
+	queue_free()

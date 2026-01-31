@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://chak4ltt123op"]
+
+[ext_resource type="Script" uid="uid://dvfc8v5n3368y" path="res://bullet/splitter_bullet.gd" id="1_vealc"]
+[ext_resource type="Texture2D" uid="uid://u425shvi7j5m" path="res://bullet/bullet_gp.png" id="2_ji1th"]
+[ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="3_vealc"]
+[ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="4_wm0qd"]
+[ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_85rdh"]
+[ext_resource type="Script" uid="uid://baug51yyody53" path="res://component/spawner_component.gd" id="6_wm0qd"]
+[ext_resource type="PackedScene" uid="uid://c54hqm4wfxq0w" path="res://bullet/bullet.tscn" id="7_85rdh"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ynyjt"]
+radius = 6.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_3udht"]
+radius = 16.0
+
+[node name="SplitterBullet" type="CharacterBody2D" unique_id=496901937]
+collision_layer = 4
+collision_mask = 0
+script = ExtResource("1_vealc")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=362001725]
+texture = ExtResource("2_ji1th")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=954772255]
+shape = SubResource("CircleShape2D_ynyjt")
+
+[node name="MovementCompenent" type="Node" parent="." unique_id=124393932 node_paths=PackedStringArray("_body")]
+script = ExtResource("3_vealc")
+_body = NodePath("..")
+metadata/_custom_type_script = "uid://dfu1hk8ne0eau"
+
+[node name="TargetComponent" type="Node" parent="." unique_id=1745173053 node_paths=PackedStringArray("_body")]
+script = ExtResource("4_wm0qd")
+_body = NodePath("..")
+
+[node name="HurtboxComponent" type="Area2D" parent="." unique_id=206779997]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("5_85rdh")
+metadata/_custom_type_script = "uid://bjhx4isrdnkyh"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HurtboxComponent" unique_id=417156219]
+shape = SubResource("CircleShape2D_3udht")
+debug_color = Color(0.8409385, 0.3572527, 0.37389633, 0.41960785)
+
+[node name="VisibleOnScreenNotifier" type="VisibleOnScreenNotifier2D" parent="." unique_id=1172766195]
+
+[node name="SpawnerComponent" type="Node2D" parent="." unique_id=401337838]
+script = ExtResource("6_wm0qd")
+bullet = ExtResource("7_85rdh")
+metadata/_custom_type_script = "uid://baug51yyody53"
+
+[node name="Timer" type="Timer" parent="." unique_id=1602839334]
+wait_time = 3.0
+one_shot = true
+autostart = true
+
+[connection signal="job_completed" from="SpawnerComponent" to="." method="_on_spawner_component_job_completed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
