@@ -1,6 +1,50 @@
 [gd_scene format=3 uid="uid://dasglho3nspfe"]
 
 [ext_resource type="Texture2D" uid="uid://bo24cax0s15j5" path="res://player/vision_blocker/splot.png" id="1_qmibn"]
+[ext_resource type="Script" uid="uid://b8m17jjs3u1lu" path="res://player/vision_blocker/splot.gd" id="2_3raxn"]
+
+[sub_resource type="Animation" id="Animation_w4mxm"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05)]
+}
+
+[sub_resource type="Animation" id="Animation_u6wrk"]
+resource_name = "splat"
+length = 0.93333334
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.93333334),
+"transitions": PackedFloat32Array(0.09473239, 0.09473239),
+"update": 0,
+"values": [Vector2(1e-05, 1e-05), Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_eu6iu"]
+_data = {
+&"RESET": SubResource("Animation_w4mxm"),
+&"splat": SubResource("Animation_u6wrk")
+}
 
 [node name="Splot" type="Sprite2D" unique_id=1167253487]
+scale = Vector2(1e-05, 1e-05)
 texture = ExtResource("1_qmibn")
+script = ExtResource("2_3raxn")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1010501918]
+unique_name_in_owner = true
+libraries/ = SubResource("AnimationLibrary_eu6iu")

@@ -1,13 +1,13 @@
-[gd_scene format=3 uid="uid://b778kqpgbopad"]
+[gd_scene format=3 uid="uid://d2wex0bjfvjgt"]
 
 [ext_resource type="Script" uid="uid://ihep336x6bpj" path="res://bullet/bullet.gd" id="1_0p4oa"]
-[ext_resource type="Texture2D" uid="uid://u425shvi7j5m" path="res://bullet/bullet_gp.png" id="2_0oyub"]
+[ext_resource type="Texture2D" uid="uid://dk0m4b55faqx4" path="res://bullet/bullet_square.png" id="2_0p4oa"]
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="3_iu5d6"]
 [ext_resource type="Script" uid="uid://bk4q82ppmb7m" path="res://component/target_component.gd" id="4_nrvqv"]
 [ext_resource type="Script" uid="uid://bjhx4isrdnkyh" path="res://component/hurtbox_component.gd" id="5_w467u"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_ynyjt"]
-radius = 6.0
+radius = 23.021729
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3udht"]
 radius = 16.0
@@ -19,7 +19,7 @@ script = ExtResource("1_0p4oa")
 size = 2
 
 [node name="Icon" type="Sprite2D" parent="." unique_id=362001725]
-texture = ExtResource("2_0oyub")
+texture = ExtResource("2_0p4oa")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=954772255]
 shape = SubResource("CircleShape2D_ynyjt")

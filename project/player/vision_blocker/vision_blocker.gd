@@ -6,7 +6,9 @@ const SPLOT_SCENE := preload("res://player/vision_blocker/splot.tscn")
 
 @export_tool_button("Randomize", "RandomNumberGenerator")
 var _trigger_action: Callable = _spread
+var _colors: Array[Color] = [Color.hex(0x19397dff), Color.hex(0xa7d354ff), Color.hex(0x7c2d97ff), Color.hex(0xd14471ff), Color.hex(0x42c39dff), Color.hex(0xefeac3ff), Color.hex(0x258b73ff)]
 
+@export var _textures: Array[Texture2D]
 @export var _spacing := 196
 @export var _wiggle := 32.0
 
@@ -41,6 +43,7 @@ func splat() -> void:
 	var splot := _hidden.get_child(index)
 	_hidden.remove_child(splot)
 	_visible.add_child(splot)
+	splot.splat()
 
 
 func _spread() -> void:
@@ -62,11 +65,12 @@ func _spread() -> void:
 
 	for x in count.x:
 		for y in count.y:
-			var splot: Sprite2D = SPLOT_SCENE.instantiate()
+			var splot: Splot = SPLOT_SCENE.instantiate()
 			add_child(splot)
 			splot.name = "Splot (%d, %d)" % [x, y]
 			splot.owner = self
+			splot.texture = _textures.pick_random()
 			splot.global_position = Vector2(x * _spacing + edge.x / 2.0, y * _spacing + edge.y / 2.0)
 			splot.global_position += Vector2(randf_range(-_wiggle, _wiggle), randf_range(-_wiggle, _wiggle))
 			splot.rotation = randf_range(0, TAU)
-			splot.modulate = Color(randf(), randf(), randf())
+			splot.modulate = _colors.pick_random()
