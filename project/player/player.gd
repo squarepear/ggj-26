@@ -6,12 +6,14 @@ signal killed
 @onready var _movement_compenent: MovementCompenent = $MovementCompenent
 @onready var _hitbox_component: HitboxComponent = $HitboxComponent
 @onready var _vision_blocker: VisionBlocker = $VisionBlocker
+@onready var _shaker_component: ShakerComponent = $ShakerComponent
 
 var can_move := true
 
 func _ready():
 	%Head.play("default")
 	_hitbox_component.hit.connect(_vision_blocker.splat.unbind(1))
+	_hitbox_component.hit.connect(_shaker_component.shake.unbind(1))
 
 
 func _physics_process(_delta: float) -> void:
