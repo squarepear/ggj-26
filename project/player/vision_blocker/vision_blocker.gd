@@ -16,6 +16,7 @@ var _colors: Array[Color] = [Color.hex(0x19397dff), Color.hex(0xa7d354ff), Color
 
 @onready var _hidden := Node2D.new()
 @onready var _visible := Node2D.new()
+@onready var _sound_effect: AudioStreamPlayer = $SoundEffect
 
 
 func _ready() -> void:
@@ -47,7 +48,7 @@ func splat() -> void:
 	_hidden.remove_child(splot)
 	_visible.add_child(splot)
 	splot.splat()
-
+	_sound_effect.play()
 
 func _spread() -> void:
 	if not Engine.is_editor_hint():
