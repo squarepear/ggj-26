@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bplp01ylsndtr"]
 
-[ext_resource type="Script" path="res://player/player.gd" id="1_yw30f"]
+[ext_resource type="Script" uid="uid://b3cw2fpnyxy3d" path="res://player/player.gd" id="1_yw30f"]
 [ext_resource type="Texture2D" uid="uid://cbp7c2l6djx6t" path="res://player/leg.png" id="2_qjkh3"]
 [ext_resource type="Script" uid="uid://dfu1hk8ne0eau" path="res://component/movement_component.gd" id="2_rkbax"]
 [ext_resource type="Texture2D" uid="uid://ch0jm2lovcsp7" path="res://player/player_head.png" id="2_yw30f"]
@@ -14,6 +14,7 @@ radius = 64.0
 radius = 96.0
 
 [node name="Player" type="CharacterBody2D" unique_id=1847389676]
+collision_layer = 2
 motion_mode = 1
 script = ExtResource("1_yw30f")
 
@@ -45,6 +46,8 @@ script = ExtResource("4_qjkh3")
 metadata/_custom_type_script = "uid://dhru0yrcpyree"
 
 [node name="HitboxComponent" type="Area2D" parent="." unique_id=2096247725]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("5_qjkh3")
 metadata/_custom_type_script = "uid://dlv8l1edgdbu2"
 
