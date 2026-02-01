@@ -8,7 +8,7 @@ var _current_wave: int = 0
 @export var _bullet_scenes: Array[PackedScene] = []
 @export var _wave_component: WaveComponent
 @export var _ghost_wave_component: WaveComponent
-
+@export var _number_of_spawns := 2
 
 func _ready() -> void:
 	assert(_wave_component, "target wave component must be assigned!")
@@ -23,7 +23,7 @@ func generate() -> void:
 	_current_wave += 1
 	var successful_settings := _ghost_wave_component.get_hits()
 	successful_settings.shuffle()
-	for i in 5:
+	for i in _number_of_spawns:
 		var settings: SpawnerSettings
 		if i < successful_settings.size():
 			settings = successful_settings[i]
