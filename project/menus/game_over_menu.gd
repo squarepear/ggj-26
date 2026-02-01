@@ -1,5 +1,10 @@
 extends Control
 
+@onready var _play_again_button: Button = $PanelContainer/VBoxContainer/PlayAgainButton
+
+func _ready() -> void:
+	_play_again_button.grab_focus.call_deferred()
+
 
 func update_waves_label(waves: int) -> void:
 	%NumberOfWavesLabel.text = "%d waves." % waves
