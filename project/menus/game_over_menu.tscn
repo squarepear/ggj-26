@@ -9,6 +9,54 @@ corner_radius_top_right = 30
 corner_radius_bottom_right = 30
 corner_radius_bottom_left = 30
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p4gbp"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_duaj0"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_j3yah"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_17k2n"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
 [node name="GameOverMenu" type="Control" unique_id=1474817016]
 layout_mode = 3
 anchors_preset = 15
@@ -56,6 +104,10 @@ horizontal_alignment = 1
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9372549, 0.91764706, 0.7647059, 1)
 theme_override_font_sizes/font_size = 128
+theme_override_styles/normal = SubResource("StyleBoxFlat_p4gbp")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_duaj0")
+theme_override_styles/hover = SubResource("StyleBoxFlat_j3yah")
+theme_override_styles/focus = SubResource("StyleBoxFlat_17k2n")
 text = "Play again?"
 
 [connection signal="pressed" from="PanelContainer/VBoxContainer/PlayAgainButton" to="." method="_on_play_again_button_pressed"]

@@ -6,6 +6,54 @@
 [ext_resource type="Texture2D" uid="uid://bx2wqofurwsi" path="res://world/background_blue.png" id="4_u4wdd"]
 [ext_resource type="AudioStream" uid="uid://dc3wkwxbc4i17" path="res://menus/GGJ_2026_Menu.ogg" id="5_u4wdd"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_u4wdd"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0wk0f"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uacro"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_r8wy3"]
+bg_color = Color(1, 0, 0.30588236, 1)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0, 0, 0, 1)
+corner_radius_top_left = 25
+corner_radius_top_right = 25
+corner_radius_bottom_right = 25
+corner_radius_bottom_left = 25
+
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_0wk0f"]
 texture = ExtResource("3_oln31")
 texture_region_size = Vector2i(256, 256)
@@ -68,6 +116,10 @@ offset_bottom = 122.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 64
+theme_override_styles/normal = SubResource("StyleBoxFlat_u4wdd")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_0wk0f")
+theme_override_styles/hover = SubResource("StyleBoxFlat_uacro")
+theme_override_styles/focus = SubResource("StyleBoxFlat_r8wy3")
 text = "Play Game!"
 
 [node name="Timer" type="Timer" parent="." unique_id=907609261]
