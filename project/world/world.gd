@@ -15,6 +15,9 @@ func _ready() -> void:
 	_wave_component.wave_completed.connect(next_wave)
 	next_wave()
 
+func _physics_process(_delta: float) -> void:
+	if Input.is_action_just_pressed("escape"):
+		get_tree().quit()
 
 func next_wave() -> void:
 	if player_living:
