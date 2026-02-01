@@ -84,7 +84,7 @@ tile_map_data = PackedByteArray("AAAAAAAAAQAAAAAAAAABAAAAAQAAAAAAAAABAAEAAQAAAAA
 tile_set = SubResource("TileSet_4717r")
 
 [node name="Player" parent="." unique_id=1847389676 instance=ExtResource("1_6xmxd")]
-position = Vector2(828, 581)
+position = Vector2(960, 540)
 
 [node name="WaveComponent" type="Node" parent="." unique_id=746619383]
 unique_name_in_owner = true
@@ -116,8 +116,8 @@ anchor_right = 0.5
 anchor_bottom = 1.0
 offset_left = -160.5
 offset_top = -1183.0
-offset_right = 250.5
-offset_bottom = -1027.9999
+offset_right = 282.5
+offset_bottom = -1008.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.9372549, 0.91764706, 0.7647059, 1)
